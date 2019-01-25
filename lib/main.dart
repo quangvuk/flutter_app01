@@ -23,8 +23,19 @@ class MyApp extends StatelessWidget {
               child: new Card(
                 color: Colors.blue.shade200,
                 child: new Center(
-
-                  child: new Text('Day $index'),
+                  
+                  child: Column(
+                    children: <Widget>[
+                     Image.asset(
+                       'images/twitterbird.png',
+                       width: 64.0,
+                       height: 64.0,
+                       fit: BoxFit.cover,
+                       
+                     ),
+                      new Text('Day - $index'),
+                    ],
+                  ),
                 ),
               ),
             );
